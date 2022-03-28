@@ -1,0 +1,44 @@
+#trip {
+  background-color: #f5e97c;
+  overflow: hidden;
+}
+
+.trip__page-up-btn {
+  padding: 25px;
+  font-size: 50px;
+}
+
+.trip__page-up-btn:hover {
+  font-size: 0;
+}
+
+.trip__page-up-btn:hover::before {
+  content: "👆🏻";
+  font-size: 50px;
+}
+
+.trip__photos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  animation: slidein 10s linear infinite;
+}
+
+.trip__photos img {
+  width: 300px;
+  height: 300px;
+  margin-right: 30px;
+  border-radius: 10px;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-2310px);
+  }
+}

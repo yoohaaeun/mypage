@@ -1,0 +1,78 @@
+#baking {
+  height: 100vh;
+  background-color: #f5e97c;
+}
+
+.baking__page-up-btn {
+  padding: 25px;
+  font-size: 50px;
+}
+
+.baking__page-up-btn:hover {
+  font-size: 0;
+}
+
+.baking__page-up-btn:hover::before {
+  content: "👆🏻";
+  font-size: 50px;
+}
+
+.baking__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 100vh;
+  margin: auto;
+  transform: translateY(-50px);
+}
+
+.baking__photo-left {
+  position: relative;
+}
+
+.baking__photo-left img:first-child {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  transform: translate(-10px, -25px);
+}
+
+.baking__photo-left img:nth-child(2) {
+  width: 380px;
+  height: auto;
+}
+
+.baking__photo-left img:last-child {
+  position: absolute;
+  width: 150px;
+  transform: translate(-260px, -80px);
+}
+
+.baking__photo-right {
+  position: relative;
+}
+
+.baking__photo-right img:first-child {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  transform: translate(-10px, -25px);
+}
+
+.baking__photo-right img:nth-child(2) {
+  width: 380px;
+  height: auto;
+}
+
+.baking__photo-right img:last-child {
+  position: absolute;
+  width: 160px;
+  transform: translate(-260px, -75px);
+}
+
+@media screen and (max-width: 1300px) {
+  .baking__container {
+    width: 80%;
+  }
+}
